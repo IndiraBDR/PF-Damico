@@ -1,0 +1,79 @@
+@use '_commons' as e;
+
+
+/* PAGINA DE INDEX-INICIO*/
+
+* {
+    margin: e.$margin-general;
+    padding:e.$padding-general;
+
+}
+
+
+
+
+body{
+    background:e.$color-body;
+ }
+ 
+
+#contenedor {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "cabecera"
+        "tinicio"
+        "heroinicio"
+        "carroinicio"
+        "video"
+        "forminicio"
+        "pie"
+
+    ;
+
+}
+
+#cabecera {
+    grid-area: cabecera;
+
+}
+
+
+
+#titulo__inicio {
+    grid-area: tinicio;
+    text-align: center;
+
+    h1{
+
+        color: e.$color-titulo-pricipal;
+        font-size: e.$size-titulo-principal;
+        padding-top: e.$padding-top-titulo-principal;
+        padding-bottom: e.$padding-bottom-titulo-principal;
+       
+      
+
+    }
+
+}
+
+
+
+
+#video {
+    grid-area: video;
+    text-align: center;
+    padding-top: 30px;
+
+    p{    color: white;
+        font-weight: 500;
+        background-color: #a91b60;
+    }
+
+
+}
+
+
+
+
+

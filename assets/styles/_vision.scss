@@ -1,0 +1,63 @@
+@use '_commons' as e;
+
+/* PAGINA DE VISION MOBILE FIRTS*/
+
+* {
+    margin: e.$margin-general;
+    padding:e.$padding-general;
+
+}
+
+
+
+
+#contenedor__vision {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+
+        "cabevision"
+        "tvision"
+        "herovision"
+        "pie"
+
+    ;
+
+}
+
+#cabecera__vision {
+    grid-area: cabevision;
+
+}
+
+
+
+#titulo__vision {
+    grid-area: tvision;
+    text-align: center;
+
+    h1{
+
+        color: e.$color-titulo-pricipal;
+        font-size: e.$size-titulo-principal;
+        padding-top: e.$padding-top-titulo-principal;
+        padding-bottom: e.$padding-bottom-titulo-principal;
+       
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

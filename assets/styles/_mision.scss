@@ -1,0 +1,64 @@
+@use '_commons' as e;
+
+* {
+    margin: e.$margin-general;
+    padding:e.$padding-general;
+
+}
+
+
+
+/* PAGINA DE MISION*/
+
+
+#contenedor__mision {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+
+
+        "cabemision"
+        "tmision"
+        "heromision"
+        "pie"
+
+
+    ;
+
+}
+
+#cabecera__mision {
+    grid-area: cabemision;
+
+}
+
+
+
+
+#titulo__mision {
+    grid-area: tmision;
+    text-align: center;
+
+
+    h1{
+
+        color: e.$color-titulo-pricipal;
+        font-size: e.$size-titulo-principal;
+        padding-top: e.$padding-top-titulo-principal;
+        padding-bottom: e.$padding-bottom-titulo-principal;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

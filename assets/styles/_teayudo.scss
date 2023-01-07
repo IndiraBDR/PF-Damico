@@ -1,0 +1,142 @@
+@use '_commons' as e;
+
+* {
+    margin: e.$margin-general;
+    padding:e.$padding-general;
+
+}
+
+
+
+/* PAGINA DE TE AYUDO*/
+
+
+#contenedor__teayudo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+
+
+        "cabeteayudo"
+        "tteayudo"
+        "contenservicios"
+        "formteayudo"
+        "carroteayudo"
+        "pie"
+
+
+    ;
+
+}
+
+#cabecera__teayudo {
+
+    grid-area: cabeteayudo;
+
+}
+
+
+
+
+#titulo__teayudo {
+    grid-area: tteayudo;
+    text-align: center;
+   
+
+    h1{
+
+        color: e.$color-titulo-pricipal;
+        font-size: e.$size-titulo-principal;
+        padding-top: e.$padding-top-titulo-principal;
+        padding-bottom: e.$padding-bottom-titulo-principal;
+
+    }
+}
+
+
+
+#contenedor__servicios {
+    grid-area: contenservicios;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+
+
+    .servicio {
+
+
+        background: e.$color-box;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        margin-top: 50px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        opacity: .7;
+
+        p{
+           color: #A64253;
+            opacity: 1;  
+        }
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TE AYUDO DESKTOP*/
+
+
+@media only screen and (min-width:1280px) {
+
+
+    #contenedor__servicios {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: stretch;
+        padding-top: 20px;
+
+        .servicio {
+            border-radius: 20px;
+            text-align: center;
+            width: 400px;
+            height: 250px;
+            padding-top: 30px;
+    
+    
+        }
+
+    }
+
+
+  
+
+    #form__teayudo {
+
+        grid-area: formteayudo;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 90px;
+
+    }
+}
