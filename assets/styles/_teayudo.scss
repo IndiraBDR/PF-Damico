@@ -65,6 +65,7 @@
     align-items: center;
     align-content: stretch;
 
+   
 
 
     .servicio {
@@ -73,18 +74,22 @@
         background: e.$color-box;
         border-radius: 10px;
         text-align: center;
-        width: 300px;
+        width: calc(e.$ancho-box/3);
+        height:e.$alto-box;
         margin-top: 50px;
         color: white;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
         opacity: .7;
+        
 
         p{
            color: #A64253;
             opacity: 1;  
         }
+
+     
     
     }
 
@@ -116,14 +121,24 @@
         align-content: stretch;
         padding-top: 20px;
 
+    
+
         .servicio {
             border-radius: 20px;
             text-align: center;
-            width: 400px;
-            height: 250px;
+            width:calc(e.$ancho-box-desktop/3);
+            height: e.$alto-box;
             padding-top: 30px;
+
+           
     
     
+        }
+
+        :nth-child(2){
+           
+            height:calc(e.$alto-box + 50px); 
+
         }
 
     }
@@ -131,12 +146,5 @@
 
   
 
-    #form__teayudo {
 
-        grid-area: formteayudo;
-        text-align: center;
-        padding-top: 70px;
-        padding-bottom: 90px;
-
-    }
 }
