@@ -5,8 +5,9 @@
 
     grid-area: pie;
     text-align: center;
-    padding-top: 150px;
+    margin-top: 20px;
     font-weight: 600;
+    background-color: e.$color-separador;
 
 
 
@@ -15,7 +16,7 @@
     
         &:before{
             content: "\ea91";
-            color: grey;
+            color: e.$color-body;
         }
     }
     
@@ -24,7 +25,7 @@
     
         &::before{
             content: "\ea92";
-            color: grey;
+            color: e.$color-body;
         
     
     

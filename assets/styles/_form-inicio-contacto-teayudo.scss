@@ -9,12 +9,15 @@
     text-align: center;
     padding-top: 20px;
 
-
+       label{
+         background-color: e.$color-section;
+         border:1px solid #ff8ba7;
+       }
 
    
 
       input {
-           background: linear-gradient(to right, #B21368, #F2C5E0);
+           background-color:#ea4c89;
            width: 80px;
            display: block;
            position: relative;
@@ -22,6 +25,8 @@
            text-align: center;
            animation: saltarin 2s infinite;
            margin: 0px auto;
+           border-radius: 10px;
+           border-color: #ea4c89;
    
    
            @keyframes saltarin {
@@ -53,25 +58,25 @@
 
        .tex-form-inicio{
 
-           color: white;
+           color: e.$color-texto;
            font-weight: bold;
    
         } 
 
 
 
-   }
+}
 
 
- #form__contacto {
+
+#form__contacto {
     grid-area: formcontacto;
     margin-left: 25px;
     margin-right: 25px;
-    padding-top: 70px;
    
     label {
 
-        color: white;
+        color: #4fc4cf;
         font-weight: bold;
     }
 
@@ -87,13 +92,24 @@
 
     label {
 
-        color: white;
-        font-weight: bold;
+        color: e.$color-texto;
+        font-weight: 500;
     }
 
+    select{
 
+        background-color: #ea4c89;
+        border-radius: 8px;
+    }
+
+   
+    
+   
+  
 
 }
+
+
 
 
 /*DESKTOP*/
@@ -101,16 +117,48 @@
 @media only screen and (min-width:1280px) {
 
     #form__contacto {
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 70px;
+
+
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    
+
+        .form__contacto__1{
+
+            width: 50%;
+            height: 1200px;
+               
+        
+    
+    
+        }
+    
+        .form__contacto__2{
+    
+            width: 50%;
+            height: 450px;
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 300px;
+            
+        
+    
+    
+        }
 
 
     }
+
+  
    
 
 
 }
+
+
 
 
 

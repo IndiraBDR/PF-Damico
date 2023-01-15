@@ -5,24 +5,29 @@
 #hero__inicio {
     grid-area: heroinicio;
     text-align: center;
-    font-weight: 500;
-    font-size: medium;
+  
 
     img{
         width: 100%;
         height: 300px;
         border-radius: 20px;
+ 
+    
     }
 
 
     p{
-        background:e.$color-box;
+        background-color:e.$color-box;
         border-radius: 20px;
         padding-top: 40px;
+        padding-bottom: 40px;
         text-align: center;
-        color: white;
+        color: e.$color-texto-box;
         font-weight: 310;
         margin-top: 10px;
+        border: 8px double #ea4c89;
+
+        
     }
 
 }
@@ -44,8 +49,8 @@
 
     p{
 
-        background:  e.$color-box;
-        color: white;
+        background-color:  e.$color-box;
+        color: e.$color-texto-box;
         margin-top: 0px;
         margin-bottom: 0px;
         text-align: center;
@@ -55,7 +60,7 @@
         padding-bottom: 20px;
         border-radius: 40px;
         height: 200px;
-
+        border: 6px double #ea4c89;
         
     }
 
@@ -89,6 +94,7 @@
         padding-bottom: 20px;
         border-radius: 40px;
         height: 200px;
+        border: 6px double #ea4c89;
     
 
 
@@ -121,17 +127,20 @@
 
         display: flex;
         flex-direction: row;
-        padding-top: 40px;
-        gap: 80px;
         text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
 
         img{
 
-            width: 450px;
+            width: 40%;
             height: 450px;
             order: 2;
-            border-radius: 20px;
             margin-top: 10px;
+
+            border: 8px double #ea4c89;
+           
+        
     
 
         }
@@ -139,16 +148,18 @@
         p{
 
             background:e.$color-box;
-            border-radius: 20px;
-            width: 450px;
+           
+            width: 60%;
             height: 450px;
-            padding-top: 30px;
-            padding-left: 40px;
-            padding-right: 40px;
-            margin-left: 150px;
+            padding-top: 70px;
+            padding-left: 70px;
+            padding-right: 70px;
             font-size: medium;
-            font-weight: 310;
+            font-weight: 400;
 
+        
+    
+        
 
         }
 
@@ -177,7 +188,6 @@
             border-radius: 40px;
             height: 300px;
             width: 45%;
-            color: white;
             text-align: center;
 
         }
@@ -254,6 +264,8 @@
 
         margin-left: 100px;
         margin-right: 100px;
+        padding-bottom: 20px;
+
     }
     
 

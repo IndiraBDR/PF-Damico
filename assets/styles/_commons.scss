@@ -2,13 +2,21 @@
 
 $margin-general:0;
 $padding-general:0;
-$color-body: linear-gradient(to right, #8E185D 0%, #FF96CA 80%, #8E185D 100%);
+$color-body:#faeee7;
 $font-body:'Source Sans Pro', sans-serif;
-$color-titulo-pricipal:white;
-$size-titulo-principal: large;
-$padding-top-titulo-principal: 50px;
-$padding-bottom-titulo-principal: 30px;
-$color-box: linear-gradient(#FF96CA 0%, #F7ECCB 120%);
+$color-titulo-pricipal:#33272a;
+$color-texto:#594a4e;
+$size-titulo-principal: 22px;
+$padding-top-titulo-principal: 8px;
+$padding-bottom-titulo-principal: 8px;
+$color-box:(#ff8ba7) ;
+$color-section:#ffc6c7;
+$color-separador:#ea4c89;
+$color-texto-box: white;
+
+
+
+$color-fondo-section:#0d0c22;
 
 $ancho-box:1000px;
 $alto-box:300px;

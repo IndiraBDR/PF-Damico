@@ -10,6 +10,10 @@
 
 /* PAGINA DE TE AYUDO*/
 
+body{
+    background-color:e.$color-body;
+}
+
 
 #contenedor__teayudo {
     display: grid;
@@ -33,6 +37,9 @@
 #cabecera__teayudo {
 
     grid-area: cabeteayudo;
+    padding-bottom: 70px;
+    background-color:e.$color-separador;
+    border-radius: 70px;
 
 }
 
@@ -42,6 +49,12 @@
 #titulo__teayudo {
     grid-area: tteayudo;
     text-align: center;
+    background-color: e.$color-section;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 4px solid #ff8ba7;
+    margin-bottom: 20px;
    
 
     h1{
@@ -71,7 +84,7 @@
     .servicio {
 
 
-        background: e.$color-box;
+        background-color: e.$color-box;
         border-radius: 10px;
         text-align: center;
         width: calc(e.$ancho-box/3);
@@ -81,8 +94,8 @@
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
-        opacity: .7;
-        
+       
+        border:8px double #ea4c89;
 
         p{
            color: #A64253;
@@ -130,8 +143,8 @@
             height: e.$alto-box;
             padding-top: 30px;
 
+         
            
-    
     
         }
 
@@ -140,6 +153,7 @@
             height:calc(e.$alto-box + 50px); 
 
         }
+       
 
     }
 
