@@ -43,9 +43,9 @@
     h1{
         color:lightcyan;
         font-size: e.$size-titulo-principal;
-      
-        background-color: e.$color-separador;
+        background-color: map-get(e.$colores,"separador");
     }
+
 }
 
 

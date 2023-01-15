@@ -9,8 +9,10 @@
 }
 
 body{
-    background-color:e.$color-body;
+    background-color:map-get(e.$colores,"body");
  }
+
+
 
 
 #contenedor__vision {
@@ -31,7 +33,7 @@ body{
 #cabecera__vision {
     grid-area: cabevision;
     padding-bottom: 70px;
-    background-color:e.$color-separador;
+    background-color:map-get(e.$colores,"separador");
     border-radius: 70px;
 
 }
@@ -41,7 +43,7 @@ body{
 #titulo__vision {
     grid-area: tvision;
     text-align: center;
-    background-color: e.$color-section;
+    background-color:map-get(e.$colores,"section");
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -50,7 +52,7 @@ body{
 
     h1{
 
-        color: e.$color-titulo-pricipal;
+        color:map-get(e.$colores,"titulo-pricipal");
         font-size: e.$size-titulo-principal;
         padding-top: e.$padding-top-titulo-principal;
         padding-bottom: e.$padding-bottom-titulo-principal;
@@ -59,6 +61,8 @@ body{
     }
 
 }
+
+
 
 
 

@@ -10,14 +10,14 @@
     padding-top: 20px;
 
        label{
-         background-color: e.$color-section;
+         background-color:map-get(e.$colores,"section");
          border:1px solid #ff8ba7;
        }
 
-   
+  
 
       input {
-           background-color:#ea4c89;
+           background-color:map-get(e.$colores,"boton");
            width: 80px;
            display: block;
            position: relative;
@@ -52,18 +52,20 @@
        textarea {
            text-align: center;
            border-radius: 8px;
-           color: lightgray
+           color: lightgray;
+           border: 2px solid #ea4c89;
+           opacity: 0.7;
+           
        }
-
 
        .tex-form-inicio{
 
-           color: e.$color-texto;
+           color:map-get(e.$colores,"texto");
            font-weight: bold;
    
         } 
 
-
+        
 
 }
 
@@ -92,9 +94,10 @@
 
     label {
 
-        color: e.$color-texto;
+        color:map-get(e.$colores,"texto");
         font-weight: 500;
     }
+    
 
     select{
 

@@ -7,16 +7,16 @@
     text-align: center;
     margin-top: 20px;
     font-weight: 600;
-    background-color: e.$color-separador;
+    background-color:map-get(e.$colores,"separador");
 
-
+   
 
     .icon-facebook2 {
         text-decoration: none;
     
         &:before{
             content: "\ea91";
-            color: e.$color-body;
+            color:map-get(e.$colores,"body");
         }
     }
     
@@ -25,7 +25,7 @@
     
         &::before{
             content: "\ea92";
-            color: e.$color-body;
+            color:map-get(e.$colores,"body");
         
     
     
@@ -33,3 +33,4 @@
     }
 
 }
+
