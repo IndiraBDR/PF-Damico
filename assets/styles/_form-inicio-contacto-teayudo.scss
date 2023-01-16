@@ -1,7 +1,7 @@
 @use '_commons' as e;
 
 
-/*MOBILE*/
+/*FORMULARIOS DEL SITIO*/
 
 #form__inicio {
 
@@ -69,8 +69,6 @@
 
 }
 
-
-
 #form__contacto {
     grid-area: formcontacto;
     margin-left: 25px;
@@ -82,8 +80,50 @@
         font-weight: bold;
     }
 
-}
 
+    @media only screen and (min-width:1280px) {
+
+    
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        
+    
+            .form__contacto__1{
+    
+                width: 50%;
+                height: 1200px;
+                   
+            
+        
+        
+            }
+        
+            .form__contacto__2{
+        
+                width: 50%;
+                height: 450px;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 300px;
+                
+            
+        
+        
+            }
+    
+    
+        
+    
+      
+       
+    
+    
+    }
+
+}
 
 #form__teayudo {
 
@@ -106,6 +146,18 @@
     }
 
    
+    @media only screen and (min-width:1280px) {
+
+    
+            grid-area: formteayudo;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 90px;
+        
+
+    
+    }
+    
     
    
   
@@ -115,69 +167,13 @@
 
 
 
-/*DESKTOP*/
-
-@media only screen and (min-width:1280px) {
-
-    #form__contacto {
-
-
-        display: flex;
-        flex-direction: row;
-        margin-left: 20px;
-        margin-right: 20px;
-        
-    
-
-        .form__contacto__1{
-
-            width: 50%;
-            height: 1200px;
-               
-        
-    
-    
-        }
-    
-        .form__contacto__2{
-    
-            width: 50%;
-            height: 450px;
-            padding-left: 70px;
-            padding-right: 70px;
-            padding-top: 300px;
-            
-        
-    
-    
-        }
-
-
-    }
-
-  
-   
-
-
-}
 
 
 
 
 
 
-@media only screen and (min-width:1280px) {
-
-    #form__teayudo {
-
-        grid-area: formteayudo;
-        text-align: center;
-        padding-top: 70px;
-        padding-bottom: 90px;
-    
-    }
 
 
-}
 
 

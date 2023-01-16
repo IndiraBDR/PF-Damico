@@ -46,8 +46,6 @@ body{
 }
 
 
-
-
 #titulo__teayudo {
     grid-area: tteayudo;
     text-align: center;
@@ -72,99 +70,3 @@ body{
 
 
 
-#contenedor__servicios {
-    grid-area: contenservicios;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch;
-
-   
-
-
-    .servicio {
-
-
-        background-color:map-get(e.$colores,"box");
-        border-radius: 10px;
-        text-align: center;
-        width: calc(e.$ancho-box/3);
-        height:e.$alto-box;
-        margin-top: 50px;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-       
-        border:8px double #ea4c89;
-
-        p{
-           color: #A64253;
-            opacity: 1;  
-        }
-
-     
-    
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TE AYUDO DESKTOP*/
-
-
-@media only screen and (min-width:1280px) {
-
-
-    #contenedor__servicios {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: stretch;
-        padding-top: 20px;
-
-    
-
-        .servicio {
-            border-radius: 20px;
-            text-align: center;
-            width:calc(e.$ancho-box-desktop/3);
-            height: e.$alto-box;
-            padding-top: 30px;
-
-         
-           
-    
-        }
-
-        :nth-child(2){
-           
-            height:calc(e.$alto-box + 50px); 
-
-        }
-       
-
-    }
-
-
-    
-
-
-  
-
-
-}
