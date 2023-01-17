@@ -1,5 +1,7 @@
 @use '_commons' as e;
 
+/* PAGINA DE TE AYUDO*/
+
 * {
     margin: e.$margin-general;
     padding:e.$padding-general;
@@ -7,8 +9,6 @@
 }
 
 
-
-/* PAGINA DE TE AYUDO*/
 
 body{
     background-color:map-get(e.$colores,"body");
@@ -39,10 +39,9 @@ body{
 #cabecera__teayudo {
 
     grid-area: cabeteayudo;
-    padding-bottom: 70px;
+    padding-bottom: e.$padding-botoom-separador;
     background-color:map-get(e.$colores,"separador");
-    border-radius: 70px;
-
+    border-radius: e.$border-radius-separador;
 }
 
 

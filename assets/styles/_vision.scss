@@ -1,6 +1,6 @@
 @use '_commons' as e;
 
-/* PAGINA DE VISION MOBILE FIRTS*/
+/* PAGINA DE VISION*/
 
 * {
     margin: e.$margin-general;
@@ -32,9 +32,9 @@ body{
 
 #cabecera__vision {
     grid-area: cabevision;
-    padding-bottom: 70px;
+    padding-bottom: e.$padding-botoom-separador;
     background-color:map-get(e.$colores,"separador");
-    border-radius: 70px;
+    border-radius: e.$border-radius-separador;
 
 }
 

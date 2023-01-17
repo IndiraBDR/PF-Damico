@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap");
+/*MAP*/
 /* PAGINA DE INDEX-INICIO*/
 * {
   margin: 0;
@@ -17,9 +18,9 @@ body {
 
 #cabecera {
   grid-area: cabecera;
-  padding-bottom: 70px;
-  background-color: #ea4c89;
-  border-radius: 70px;
+  padding-bottom: 40px;
+  background-color: #ff8ba7;
+  border-radius: 40px;
 }
 
 #titulo__inicio {
@@ -36,6 +37,14 @@ body {
   font-size: 22px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.form-control {
+  border: 2px solid #ff8ba7;
+}
+
+.btn {
+  border: 2px solid #ff8ba7;
 }
 
 #video {
@@ -65,7 +74,7 @@ body {
   }
 }
 
-/* PAGINA DE VISION MOBILE FIRTS*/
+/* PAGINA DE VISION*/
 * {
   margin: 0;
   padding: 0;
@@ -84,9 +93,9 @@ body {
 
 #cabecera__vision {
   grid-area: cabevision;
-  padding-bottom: 70px;
-  background-color: #ea4c89;
-  border-radius: 70px;
+  padding-bottom: 40px;
+  background-color: #ff8ba7;
+  border-radius: 40px;
 }
 
 #titulo__vision {
@@ -106,12 +115,12 @@ body {
   padding-bottom: 8px;
 }
 
+/* PAGINA DE MISION*/
 * {
   margin: 0;
   padding: 0;
 }
 
-/* PAGINA DE MISION*/
 body {
   background-color: #faeee7;
 }
@@ -125,9 +134,9 @@ body {
 
 #cabecera__mision {
   grid-area: cabemision;
-  padding-bottom: 70px;
-  background-color: #ea4c89;
-  border-radius: 70px;
+  padding-bottom: 40px;
+  background-color: #ff8ba7;
+  border-radius: 40px;
 }
 
 #titulo__mision {
@@ -147,12 +156,12 @@ body {
   padding-bottom: 8px;
 }
 
+/* PAGINA DE TE AYUDO*/
 * {
   margin: 0;
   padding: 0;
 }
 
-/* PAGINA DE TE AYUDO*/
 body {
   background-color: #faeee7;
 }
@@ -166,9 +175,9 @@ body {
 
 #cabecera__teayudo {
   grid-area: cabeteayudo;
-  padding-bottom: 70px;
-  background-color: #ea4c89;
-  border-radius: 70px;
+  padding-bottom: 40px;
+  background-color: #ff8ba7;
+  border-radius: 40px;
 }
 
 #titulo__teayudo {
@@ -188,12 +197,12 @@ body {
   padding-bottom: 8px;
 }
 
+/* PAGINA DE CONTACTO*/
 * {
   margin: 0;
   padding: 0;
 }
 
-/* PAGINA DE CONTACTO*/
 #contenedor__contacto {
   display: grid;
   grid-template-columns: 100%;
@@ -212,7 +221,7 @@ body {
 #titulo__contacto h1 {
   color: lightcyan;
   font-size: 22px;
-  background-color: #ea4c89;
+  background-color: #ff8ba7;
 }
 
 /* CONTENIDO CENTRAL DEL SITIO*/
@@ -402,7 +411,7 @@ body {
   border: 8px double #ea4c89;
 }
 #contenedor__servicios .servicio p {
-  color: #A64253;
+  color: #594a4e;
   opacity: 1;
 }
 @media only screen and (min-width: 1280px) {
@@ -540,7 +549,7 @@ body {
   text-align: center;
   margin-top: 20px;
   font-weight: 600;
-  background-color: #ea4c89;
+  background-color: #ff8ba7;
 }
 #pie .icon-facebook2 {
   text-decoration: none;

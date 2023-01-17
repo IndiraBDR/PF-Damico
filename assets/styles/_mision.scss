@@ -1,14 +1,12 @@
 @use '_commons' as e;
 
+/* PAGINA DE MISION*/
+
 * {
     margin: e.$margin-general;
     padding:e.$padding-general;
 
 }
-
-
-
-/* PAGINA DE MISION*/
 
 
 body{
@@ -35,11 +33,10 @@ body{
 
 #cabecera__mision {
     grid-area: cabemision;
-    padding-bottom: 70px;
+    padding-bottom: e.$padding-botoom-separador;
     background-color:map-get(e.$colores,"separador");
-    border-radius: 70px;
+    border-radius: e.$border-radius-separador;
 }
-
 
 
 

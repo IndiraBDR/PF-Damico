@@ -14,7 +14,7 @@
 
 body{
     background:map-get(e.$colores,"body");
- }
+}
  
  
 
@@ -37,9 +37,9 @@ body{
 
 #cabecera {
     grid-area: cabecera;
-    padding-bottom: 70px;
+    padding-bottom:e.$padding-botoom-separador;
     background-color:map-get(e.$colores,"separador");
-    border-radius: 70px;
+    border-radius: e.$border-radius-separador;
   
    
 
@@ -72,19 +72,26 @@ body{
 
 }
 
+.form-control{
 
+    border:2px solid map-get(e.$colores,"separador");
+ 
+}
 
+.btn{
 
+    border:2px solid map-get(e.$colores,"separador");
+ 
 
+}
 
 #video {
     grid-area: video;
     text-align: center;
     padding-top: 30px;
-
-
+    
     p{  
-          color:map-get(e.$colores,"texto");
+        color:map-get(e.$colores,"texto");
         font-weight: 500;
         background-color:map-get(e.$colores,"section");
         margin-left: 20px;
@@ -95,9 +102,6 @@ body{
 
 }
 
-
-
-
 #logotipo__marca{
     grid-area: logotipo;
     text-align: center;
@@ -107,7 +111,6 @@ body{
         width: 120px;
     }
 
-   
 
     @media only screen and (min-width:1280px) {
 

@@ -3,14 +3,16 @@
 $margin-general:0;
 $padding-general:0;
 
+/*MAP*/
+
 $colores:(
 
  body:#faeee7,
  titulo-pricipal:#33272a,
  texto:#594a4e,
- box:(#ff8ba7),
+ box:#ff8ba7,
  section:#ffc6c7,
- separador:#ea4c89,
+ separador:#ff8ba7,
  texto-box: white,
  fondo-section:#0d0c22,
  boton:#ea4c89,
@@ -19,14 +21,13 @@ $colores:(
 );
 
 
-
 $font-body:'Source Sans Pro', sans-serif;
-
-
 $size-titulo-principal: 22px;
 $padding-top-titulo-principal: 8px;
 $padding-bottom-titulo-principal: 8px;
 $ancho-box:1000px;
 $alto-box:300px;
 $ancho-box-desktop:1100px;
+$padding-botoom-separador:40px;
+$border-radius-separador:40px;
 
