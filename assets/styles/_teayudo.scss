@@ -9,12 +9,9 @@
 }
 
 
-
 body{
     background-color:map-get(e.$colores,"body");
 }
-
-
 
 
 #contenedor__teayudo {
@@ -27,8 +24,8 @@ body{
         "cabeteayudo"
         "tteayudo"
         "contenservicios"
-        "formteayudo"
         "carroteayudo"
+        "formteayudo"
         "pie"
 
 
@@ -39,20 +36,28 @@ body{
 #cabecera__teayudo {
 
     grid-area: cabeteayudo;
-    padding-bottom: e.$padding-botoom-separador;
-    background-color:map-get(e.$colores,"separador");
-    border-radius: e.$border-radius-separador;
+    
+    .form-control{
+
+        border:2px solid map-get(e.$colores,"separador");
+     
+    }
+    
+    .btn{
+    
+        border:2px solid map-get(e.$colores,"separador");
+    
+    }
+ 
 }
 
 
 #titulo__teayudo {
     grid-area: tteayudo;
     text-align: center;
-    background-color:map-get(e.$colores,"section");
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 4px solid #ff8ba7;
     margin-bottom: 20px;
    
    
@@ -60,11 +65,21 @@ body{
     h1{
 
         color:map-get(e.$colores,"titulo-pricipal");
-        font-size: e.$size-titulo-principal;
+        font-size: e.$size-titulo-principal-mobile;
         padding-top: e.$padding-top-titulo-principal;
         padding-bottom: e.$padding-bottom-titulo-principal;
+        
+        @media only screen and (min-width:1280px) {
+        
+              font-size: e.$size-titulo-principal;
+        
+    
+        }
+
 
     }
+
+   
 }
 
 

@@ -3,18 +3,15 @@
 
 /*FORMULARIOS DEL SITIO*/
 
+/*FORMULARIO DEL  LA PAG  DE INICIO*/
+
 #form__inicio {
 
     grid-area: forminicio;
     text-align: center;
     padding-top: 20px;
 
-       label{
-         background-color:map-get(e.$colores,"section");
-         border:1px solid #ff8ba7;
-       }
-
-  
+    
       input {
            background-color:map-get(e.$colores,"boton");
            width: 80px;
@@ -45,8 +42,7 @@
        }
 
 
-     
-
+    
 
        textarea {
            text-align: center;
@@ -54,13 +50,20 @@
            color: lightgray;
            border: 2px solid #ea4c89;
            opacity: 0.7;
-           
+                   
        }
 
        .tex-form-inicio{
 
-           color:map-get(e.$colores,"texto");
-           font-weight: bold;
+           color:map-get(e.$colores,"titulo-pricipal");
+           font-size: 17px;
+
+           @media only screen and (min-width:1280px) {
+            
+              font-size: 22px;
+
+           }
+           
    
         } 
 
@@ -68,57 +71,9 @@
 
 }
 
-#form__contacto {
-    grid-area: formcontacto;
-    margin-left: 25px;
-    margin-right: 25px;
-   
-
-    label {
-
-        color: #4fc4cf;
-        font-weight: bold;
-    }
 
 
-    @media only screen and (min-width:1280px) {
-
-    
-            display: flex;
-            flex-direction: row;
-            margin-left: 20px;
-            margin-right: 20px;
-            
-        
-    
-            .form__contacto__1{
-    
-                width: 50%;
-                height: 1200px;
-                   
-            
-        
-        
-            }
-        
-            .form__contacto__2{
-        
-                width: 50%;
-                height: 450px;
-                padding-left: 70px;
-                padding-right: 70px;
-                padding-top: 300px;
-                
-            
-        
-        
-            }
-         
-    
-    
-    }
-
-}
+/*FORMULARIO DEL  LA PAG  DE TE AYUDO*/
 
 #form__teayudo {
 
@@ -136,7 +91,7 @@
 
     select{
 
-        background-color: #ea4c89;
+        background-color: #ff8ba7;
         border-radius: 8px;
     }
   
@@ -153,14 +108,73 @@
     
     }
     
-    
-   
+ 
   
 
 }
 
 
 
+/*FORMULARIO DEL  LA PAG  DE CONTACTO*/
+
+
+#form__contacto {
+    
+    grid-area: formcontacto;
+    margin-left: 25px;
+    margin-right: 25px;
+   
+
+    label {
+
+        color: #4fc4cf;
+        opacity: 0.8;
+        font-weight: bold;
+    }
+
+    .form__contacto__1{
+    
+        width: 80%;
+        margin-left: 45px ;
+    
+
+
+    }
+
+
+    @media only screen and (min-width:1280px) {
+
+    
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        
+    
+            .form__contacto__1{
+    
+                width: 50%;
+           
+        
+            }
+        
+            .form__contacto__2{
+        
+                width: 50%;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 250px;
+                
+        
+        
+            }
+         
+    
+    
+    }
+
+}
 
 
 

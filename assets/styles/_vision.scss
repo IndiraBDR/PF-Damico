@@ -10,9 +10,7 @@
 
 body{
     background-color:map-get(e.$colores,"body");
- }
-
-
+}
 
 
 #contenedor__vision {
@@ -31,10 +29,21 @@ body{
 }
 
 #cabecera__vision {
+
     grid-area: cabevision;
-    padding-bottom: e.$padding-botoom-separador;
-    background-color:map-get(e.$colores,"separador");
-    border-radius: e.$border-radius-separador;
+    
+    .form-control{
+
+        border:2px solid map-get(e.$colores,"separador");
+     
+    }
+    
+    .btn{
+    
+        border:2px solid map-get(e.$colores,"separador");
+    
+    }
+
 
 }
 
@@ -43,22 +52,29 @@ body{
 #titulo__vision {
     grid-area: tvision;
     text-align: center;
-    background-color:map-get(e.$colores,"section");
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 4px solid #ff8ba7;
     margin-bottom: 20px;
 
     h1{
 
         color:map-get(e.$colores,"titulo-pricipal");
-        font-size: e.$size-titulo-principal;
+        font-size: e.$size-titulo-principal-mobile;
         padding-top: e.$padding-top-titulo-principal;
         padding-bottom: e.$padding-bottom-titulo-principal;
        
+        @media only screen and (min-width:1280px) {
+        
+        
+                font-size: e.$size-titulo-principal;
+        
+    
+        }
 
     }
+
+   
 
 }
 

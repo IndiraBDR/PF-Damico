@@ -9,14 +9,13 @@
     font-weight: 600;
     background-color:map-get(e.$colores,"separador");
 
-   
 
     .icon-facebook2 {
         text-decoration: none;
     
         &:before{
             content: "\ea91";
-            color:map-get(e.$colores,"body");
+            color:map-get(e.$colores,"pie");
         }
     }
     
@@ -25,7 +24,7 @@
     
         &::before{
             content: "\ea92";
-            color:map-get(e.$colores,"body");
+            color:map-get(e.$colores,"pie");
         
     
     

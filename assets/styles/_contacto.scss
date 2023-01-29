@@ -29,19 +29,43 @@
 }
 
 #Cabecera__contacto {
+    
     grid-area: cabecontacto;
+    
+    .form-control{
+
+        border:2px solid map-get(e.$colores,"separador");
+     
+    }
+    
+    .btn{
+    
+        border:2px solid map-get(e.$colores,"separador");
+    
+    }
 
 }
 
 #titulo__contacto {
     grid-column: tcontacto;
     text-align: center;
+    
 
     h1{
-        color:lightcyan;
-        font-size: e.$size-titulo-principal;
-        background-color: map-get(e.$colores,"separador");
+        color:map-get(e.$colores,"titulo-pricipal");
+        font-size: e.$size-titulo-principal-mobile;
+        padding-top: e.$padding-top-titulo-principal;
+
+        @media only screen and (min-width:1280px) {
+        
+                font-size: e.$size-titulo-principal;
+        
+    
+        }
+       
     }
+
+  
 
 }
 
